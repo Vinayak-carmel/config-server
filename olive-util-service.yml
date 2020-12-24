@@ -1,0 +1,49 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: olive-util-service
+
+logging:
+  level:
+    root: info
+    org:
+      hibernate:
+        type: info
+        SQL: debug
+    com:
+      carmel:
+        olive: trace
+
+  pattern:
+    console: '%d{"yyyy/MM/dd HH:mm:ss,SSS"} [%p] [%t] %M\(%F:%L\) - %msg%n'
+
+  logback:
+    rollingpolicy:
+      clean-history-on-start: false
+      max-file-size: 5MB
+  file:
+    name: ./logs/olive-util-server.log
+
+
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9002/oauth/check_token
+    client:
+      client-id: olive@carmelsolutions
+      client-secret: P@ssw0rd
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
