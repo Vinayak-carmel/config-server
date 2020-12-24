@@ -15,7 +15,10 @@ zuul:
       serviceId: olive-foundation-server
     sevice-registry:
       path: /registry/**
-      serviceId: sevice-registry  
+      serviceId: olive-sevice-registry  
+    util-service:
+      path: /util/**
+      serviceId: olive-util-service  
 eureka:
   client:
     register-with-eureka: true
