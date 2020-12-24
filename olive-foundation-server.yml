@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 9004
 
 spring:
   application:
@@ -46,7 +46,7 @@ logging:
 security:
   oauth2:
     resource:
-      token-info-uri: http://localhost:7575/oauth/check_token
+      token-info-uri: http://localhost:9002/oauth/check_token
     client:
       client-id: olive@carmelsolutions
       client-secret: P@ssw0rd
@@ -56,7 +56,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://localhost:9001/eureka/
 
 hystrix:
   command:
