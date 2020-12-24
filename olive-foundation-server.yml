@@ -65,3 +65,4 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+userBucket: bucket            
