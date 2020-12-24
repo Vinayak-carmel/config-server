@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: carmel-gateway
+    name: olive-carmel-gateway
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
   prefix: /olive
