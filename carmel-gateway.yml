@@ -13,6 +13,9 @@ zuul:
     foudation-sevice:
       path: /api/**
       serviceId: olive-foundation-server
+    sevice-registry:
+      path: /registry/**
+      serviceId: sevice-registry  
 eureka:
   client:
     register-with-eureka: true
