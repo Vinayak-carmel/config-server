@@ -34,16 +34,3 @@ security:
     client:
       client-id: olive@carmelsolutions
       client-secret: P@ssw0rd
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://localhost:9001/eureka/
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
