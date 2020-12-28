@@ -21,4 +21,6 @@ zuul:
       path: /util/**
       serviceId: olive-util-service  
 
-
+ribbon:
+  eureka:
+    enable: true
