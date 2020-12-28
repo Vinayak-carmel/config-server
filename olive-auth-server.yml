@@ -41,22 +41,6 @@ logging:
       max-file-size: 5MB
   file:
     name: ./logs/olive-auth-server.log
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://localhost:9001/eureka/
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
-#carmel:
-#  oliveRedirectURL: http://localhost:8081
 
 #spring:
 #  security:
