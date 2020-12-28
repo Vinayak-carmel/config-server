@@ -4,6 +4,7 @@ spring:
   application:
     name: olive-carmel-gateway
 zuul:
+  ignoredServices: '*'
   sensitiveHeaders: Cookie,Set-Cookie
   prefix: /olive
   routes:
