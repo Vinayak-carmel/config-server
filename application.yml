@@ -1,4 +1,12 @@
-
+spring:
+  application:
+    name: olive-foundation-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/oliveFoundation?createDatabaseIfNotExist=true
+    username: root
+    password: P@ssw0rd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
 eureka:
   client:
     register-with-eureka: true
