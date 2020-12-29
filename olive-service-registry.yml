@@ -10,7 +10,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-     defaultZone: http://localhost:9001/eureka
+     defaultZone: http://172.16.1.17:9001/eureka
 
 hystrix:
   command:
