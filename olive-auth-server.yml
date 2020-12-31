@@ -56,5 +56,7 @@ logging:
 #    authorization:
 #      check-token-access: permitAll
 
+carmel:
+  getOliveRedirectURL : http://localost:9004
 
 
