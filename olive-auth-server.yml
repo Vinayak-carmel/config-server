@@ -57,6 +57,6 @@ logging:
 #      check-token-access: permitAll
 
 carmel:
-  oliveRedirectURL : http://localhost:8100/dashboard
+  oliveRedirectURL : https://www.youtube.com
 
 
