@@ -20,7 +20,10 @@ zuul:
     util-service:
       path: /util/**
       serviceId: olive-util-service  
-
+proxy:
+  auth:
+    routes:
+      api: oauth2
 ribbon:
   eureka:
     enable: true
