@@ -37,7 +37,11 @@ logging:
       max-file-size: 5MB
   file:
     name: ./logs/olive-auth-server.log
-
+security:
+  oauth2:
+    client:
+      preEstablishedRedirectUri: http://localhost:8100/dashboard
+      useCurrentUri: false
 #spring:
 #  security:
 #    user:
