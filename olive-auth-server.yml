@@ -61,6 +61,6 @@ security:
 #      check-token-access: permitAll
 
 carmel:
-  oliveRedirectURL :  http://localhost:9004/org/get
+  oliveRedirectURL :  http://localhost:8100
 
 
