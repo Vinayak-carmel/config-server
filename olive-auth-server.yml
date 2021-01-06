@@ -40,7 +40,7 @@ logging:
 security:
   oauth2:
     client:
-      preEstablishedRedirectUri: http://localhost:8100
+      preEstablishedRedirectUri: http://localhost:9002
       useCurrentUri: false
 #spring:
 #  security:
