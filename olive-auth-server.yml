@@ -37,11 +37,6 @@ logging:
       max-file-size: 5MB
   file:
     name: ./logs/olive-auth-server.log
-security:
-  oauth2:
-    client:
-      preEstablishedRedirectUri: http://localhost:9002
-      useCurrentUri: false
 #spring:
 #  security:
 #    user:
@@ -60,7 +55,7 @@ security:
 #    authorization:
 #      check-token-access: permitAll
 
-carmel:
-  oliveRedirectURL :  http://localhost:9002
+#carmel:
+ # oliveRedirectURL :  http://localhost:9002
 
 
