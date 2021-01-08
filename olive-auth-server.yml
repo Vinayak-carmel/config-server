@@ -56,6 +56,6 @@ logging:
 #      check-token-access: permitAll
 
 carmel:
-  oliveRedirectURL :  http://localhost:9002
+  oliveRedirectURL :  http://localhost:8100
 
 
