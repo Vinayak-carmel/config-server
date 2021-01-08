@@ -19,11 +19,11 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5Dialect  
 logging:
   level:
-    root: info
+    root: trace
     org:
       hibernate:
-        type: info
-        SQL: debug
+        type: trace
+        SQL: trace
     com:
       carmel:
         olive: trace
