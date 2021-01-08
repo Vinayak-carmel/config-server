@@ -62,6 +62,6 @@ security:
 #      check-token-access: permitAll
 
 carmel:
-  oliveRedirectURL :  http://localhost:8100
+  oliveRedirectURL :  http://localhost:8100/dashboard
 
 
