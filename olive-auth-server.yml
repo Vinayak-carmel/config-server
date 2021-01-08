@@ -50,11 +50,11 @@ logging:
 #      password: secret007
 #      roles: ADMIN,USER
 #
-security:
-  oauth2:
-    client:
-      client-id: olive@carmelsolutions
-      client-secret: P@ssw0rd
+# security:
+#   oauth2:
+#     client:
+#       client-id: olive@carmelsolutions
+#       client-secret: P@ssw0rd
 #      access-token-validity-seconds: 3600
 #      authorized-grant-types: refresh_token,authorization_code,password,client_credentials
 #      scope: READ,WRITE
