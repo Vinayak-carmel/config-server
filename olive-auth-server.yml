@@ -61,7 +61,7 @@ security:
 #    authorization:
 #      check-token-access: permitAll
 
-# carmel:
-#   oliveRedirectURL :  http://localhost:8100
+carmel:
+  oliveRedirectURL :  http://localhost:8100
 
 
