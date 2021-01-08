@@ -17,19 +17,13 @@ spring:
     generate-ddl: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5Dialect  
-# logging:
-#   level:
-#     root: info
-#     org:
-#       hibernate:
-#         type: info
-#         SQL: debug
 logging:
   level:
-    root: WARN
-    org.springframework.web: INFO
-    org.springframework.security: INFO
-    org.springframework.security.oauth2: INFO
+    root: info
+    org:
+      hibernate:
+        type: info
+        SQL: debug
     com:
       carmel:
         olive: trace
