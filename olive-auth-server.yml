@@ -19,14 +19,14 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5Dialect  
 logging:
   level:
-    root: trace
+    root: info
     org:
       hibernate:
-        type: trace
+        type: info
         SQL: trace
     com:
       carmel:
-        olive: trace
+        olive: info
 
   pattern:
     console: '%d{"yyyy/MM/dd HH:mm:ss,SSS"} [%p] [%t] %M\(%F:%L\) - %msg%n'
