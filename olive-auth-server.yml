@@ -55,8 +55,6 @@ logging:
 #    authorization:
 #      check-token-access: permitAll
 
-carmel:
-  oliveRedirectURL :  https://www.youtube.com
   
 
 
