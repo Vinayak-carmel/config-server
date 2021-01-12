@@ -55,6 +55,9 @@ logging:
 #    authorization:
 #      check-token-access: permitAll
 
+carmel:
+  oliveRedirectURL : http://localost:8100
+
   
 
 
