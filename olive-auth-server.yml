@@ -1,62 +1,49 @@
 server:
-  port: 9002
+  port: 7071
+
+olive-client:
+  client-id: olive@carmelsolutions
+  client-secret: P@ssw0rd
+  auth-end-point: /api/v1/olive-login
+
+eureka:
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://139.59.77.84:7074/eureka/
+
 spring:
+  application:
+    name: olive-auth-server
+
   datasource:
-    url: jdbc:mysql://localhost:3306/oliveFoundation?createDatabaseIfNotExist=true
+    url: jdbc:mysql://139.59.77.84:8090/olive-stage?createDatabaseIfNotExist=true&useLegacyDatetimeCode=false
     username: root
-    password: P@ssw0rd
+    password: C@rmel007
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
 
   jpa:
     hibernate:
+#      properties:
+#        jdbc:
+#          time_zone: UTC    
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: update
     show-sql: true
     generate-ddl: true
     database: mysql
-    database-platform: org.hibernate.dialect.MySQL5Dialect  
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+
 logging:
-  level:
-    root: info
-    org:
-      hibernate:
-        type: info
-        SQL: trace
-    com:
-      carmel:
-        olive: info
+#  level:
+#    root: trace
 
-  pattern:
-    console: '%d{"yyyy/MM/dd HH:mm:ss,SSS"} [%p] [%t] %M\(%F:%L\) - %msg%n'
-
-  logback:
-    rollingpolicy:
-      clean-history-on-start: false
-      max-file-size: 5MB
   file:
     name: ./logs/olive-auth-server.log
-#spring:
-#  security:
-#    user:
-#      name: ronald
-#      password: secret007
-#      roles: ADMIN,USER
-#
-# security:
-#   oauth2:
-#     client:
-#       client-id: olive@carmelsolutions
-#       client-secret: P@ssw0rd
-#      access-token-validity-seconds: 3600
-#      authorized-grant-types: refresh_token,authorization_code,password,client_credentials
-#      scope: READ,WRITE
-#    authorization:
-#      check-token-access: permitAll
-
-carmel:
-  oliveRedirectURL : http://localost:8100
 
   
 
