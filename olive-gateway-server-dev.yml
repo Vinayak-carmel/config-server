@@ -61,4 +61,3 @@ logging:
 #    root: trace
   file:
     name: ./logs/olive-gateway-server.log
-    
